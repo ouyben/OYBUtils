@@ -16,7 +16,7 @@ public class GsonUtil {
     private static volatile GsonUtil sGsonUtil;
     private Gson mGson;
 
-    public GsonUtil getGsonUtil() {
+    public static GsonUtil getGsonUtil() {
         if (sGsonUtil == null) {
             synchronized (GsonUtil.class) {
                 if (sGsonUtil == null)
