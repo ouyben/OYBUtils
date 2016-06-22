@@ -1,4 +1,4 @@
-package com.ouyben.androidutils.xutils;
+package com.ouyben.androidutils.httpUtils;
 
 import org.xutils.common.Callback;
 import org.xutils.http.RequestParams;

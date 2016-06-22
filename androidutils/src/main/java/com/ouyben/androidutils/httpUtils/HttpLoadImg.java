@@ -1,4 +1,4 @@
-package com.ouyben.androidutils.xutils;
+package com.ouyben.androidutils.httpUtils;
 
 import android.app.Activity;
 import android.content.Context;
