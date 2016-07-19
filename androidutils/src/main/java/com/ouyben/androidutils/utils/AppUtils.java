@@ -1,11 +1,13 @@
 package com.ouyben.androidutils.utils;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 
 import java.io.File;
 
@@ -136,5 +138,19 @@ public class AppUtils {
             e.printStackTrace();
         }
         return sourceDir;
+    }
+
+    /**
+     * 安装apk
+     *
+     * @param context 上下文
+     * @param path    文件路劲
+     */
+    public static void installAPK(Context context, String path) {
+        Intent intent = new Intent();
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.setAction(android.content.Intent.ACTION_VIEW);
+        intent.setDataAndType(Uri.fromFile(new File(path)), "application/vnd.android.package-archive");
+        context.startActivity(intent);
     }
 }
