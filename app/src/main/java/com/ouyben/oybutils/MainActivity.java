@@ -11,7 +11,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.ouyben.androidutils.recyclerview.AutoSwipeRefreshLayout;
-import com.ouyben.androidutils.utils.SPUtils;
 import com.ouyben.androidutils.utils.TimeUtils;
 
 import java.lang.ref.WeakReference;
